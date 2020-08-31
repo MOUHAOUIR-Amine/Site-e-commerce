@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="/resources/templates/templateShopping.xhtml">
+
+    
+
+    <ui:define name="main">
+        <div style="text-align: center; margin-top:50px;">
+            <map>
+                <area alt="samsung" coords="72,2,280,250" shape="RECT" href="showproducts.xhtml?categoryName=samsung"/>
+                
+                <area alt="iphone" coords="60,250,130,320" shape="RECT" href="showproducts.xhtml?categoryName=iphone"/>
+                <area alt="huawei" coords="140,270,210,340" shape="RECT" href="showproducts.xhtml?categoryName=huawei"/>
+                <area alt="sony" coords="225,240,295,310" shape="RECT" href="showproducts.xhtml?categoryName=sony"/>
+                <area alt="xiaomi" coords="280,180,350,250" shape="RECT" href="showproducts.xhtml?categoryName=xiaomi"/>
+            </map>
+            <img src="#{resource['dd.jpg']}" border="0" width="350" height="355" align="middle" usemap="#pestoremap"
+                 alt="Welcome to YAPS PetStore"/>
+        </div>
+    </ui:define>
+</ui:composition>

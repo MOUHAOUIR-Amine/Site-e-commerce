@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                template="/resources/templates/template.xhtml">
+
+    <ui:define name="navigation">
+        <div class="col-md-2 well">
+            <ul class="nav nav-list">
+                <li><h3><h:link outcome="/shopping/showproducts" value="samsung">
+                    <f:param name="categoryName" value="samsung"/>
+                    <!--<f:param name="cid" value="#{javax.enterprise.context.conversation.id}"/>-->
+                </h:link></h3>
+                </li>
+                <li><h3><h:link outcome="/shopping/showproducts" value="iphone">
+                    <f:param name="categoryName" value="iphone"/>
+                    <!--<f:param name="cid" value="#{javax.enterprise.context.conversation.id}"/>-->
+                </h:link></h3>
+                </li>
+                <li><h3><h:link outcome="/shopping/showproducts" value="huawei">
+                    <f:param name="categoryName" value="huawei"/>
+                    <!--<f:param name="cid" value="#{javax.enterprise.context.conversation.id}"/>-->
+                </h:link></h3>
+                </li>
+                <li><h3><h:link outcome="/shopping/showproducts" value="sony">
+                    <f:param name="categoryName" value="sony"/>
+                    <!--<f:param name="cid" value="#{javax.enterprise.context.conversation.id}"/>-->
+                </h:link></h3>
+                </li>
+                <li><h3><h:link outcome="/shopping/showproducts" value="xiaomi">
+                    <f:param name="categoryName" value="xiaomi"/>
+                    <!--<f:param name="cid" value="#{javax.enterprise.context.conversation.id}"/>-->
+                </h:link></h3>
+                </li>
+            </ul>
+        </div>
+    </ui:define>
+</ui:composition>
